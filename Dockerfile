@@ -1,8 +1,8 @@
 FROM richarvey/nginx-php-fpm:latest
 
-ENV WEBROOT=/var/www/html/public
-
 COPY . /var/www/html
+
+COPY nginx-site.conf /etc/nginx/sites-enabled/default.conf
 
 WORKDIR /var/www/html
 
