@@ -9,7 +9,7 @@
 
     <title>BIJAKSATU SDN BHD</title>
 
-    <!-- FORCE CSS LOAD -->
+    <!-- CSS -->
     <link rel="stylesheet" href="/css/style.css?v=20260508">
 
 </head>
@@ -24,29 +24,31 @@
             BIJAKSATU SDN BHD
         </div>
 
+        <!-- NAVIGATION -->
+
         <nav>
 
-            <a href="{{ route('home') }}">
+            <a href="/">
                 Home
             </a>
 
-            <a href="{{ route('about') }}">
+            <a href="/about">
                 About
             </a>
 
-            <a href="{{ route('courses') }}">
+            <a href="/courses">
                 Courses
             </a>
 
-            <a href="{{ route('trainers') }}">
+            <a href="/trainers">
                 Trainers / Coaches
             </a>
 
-            <a href="{{ route('contact') }}">
+            <a href="/contact">
                 Contact
             </a>
 
-            <a href="{{ route('register') }}" class="nav-btn">
+            <a href="/register" class="nav-btn">
                 Register
             </a>
 

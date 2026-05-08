@@ -3,12 +3,6 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\StudentRegistrationController;
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-*/
-
 Route::get('/', function () {
     return view('home');
 })->name('home');
@@ -29,14 +23,5 @@ Route::get('/contact', function () {
     return view('contact');
 })->name('contact');
 
-/*
-|--------------------------------------------------------------------------
-| Student Registration Routes
-|--------------------------------------------------------------------------
-*/
-
-Route::get('/register', [StudentRegistrationController::class, 'create'])
-    ->name('register');
-
-Route::post('/register', [StudentRegistrationController::class, 'store'])
-    ->name('register.store');
+Route::get('/register', [StudentRegistrationController::class, 'create'])->name('register');
+Route::post('/register', [StudentRegistrationController::class, 'store'])->name('register.store');
