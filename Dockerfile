@@ -1,6 +1,6 @@
 FROM richarvey/nginx-php-fpm:latest
 
-ENV WEBROOT /var/www/html/public
+ENV WEBROOT=/var/www/html/public
 
 COPY . /var/www/html
 
