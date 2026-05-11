@@ -28,3 +28,11 @@ Route::get('/register', [StudentRegistrationController::class, 'create'])
 
 Route::post('/register', [StudentRegistrationController::class, 'store'])
     ->name('register.store');
+
+Route::get('/elibrary', function () {
+    return view('elibrary-home');
+})->name('elibrary.home');
+
+Route::get('/library', function () {
+    return view('library');
+})->name('library');

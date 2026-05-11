@@ -52,6 +52,8 @@
                 Register
             </a>
 
+            <a href="/elibrary">E-Library</a>
+
         </nav>
 
     </header>
